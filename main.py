@@ -4,10 +4,8 @@ from langchain.docstore.document import Document
 import requests
 import openai
 
-# openai.api_key = ('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')
-API='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'
+API='<Your-API-Key>'
 
-# OPENAI_API_KEY="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"
 
 def get_wiki_data(title, first_paragraph_only):
     url = f"https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=1&titles={title}"
